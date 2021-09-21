@@ -1,10 +1,20 @@
+/**
+ * MontyHall.rs
+ *
+ * Example Monty Hall problem simulation.
+ * usage: cargo build && ./MontyHall
+ *
+ * @author Maxamilian Demian
+ * @link https://www.maxodev.org
+ * @link https://github.com/Maxoplata/MontyHall
+ */
 use rand::Rng;
 
 // The number of times to run for each choice (keep and change will run NUMBER_OF_RUNS times EACH)
 static NUMBER_OF_RUNS: i32 = 1000000;
 
 fn main() {
-	let mut keep_wins := 0;
+	let mut keep_wins = 0;
 	let mut keep_losses = 0;
 	let mut change_wins = 0;
 	let mut change_losses = 0;
