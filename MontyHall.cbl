@@ -7,10 +7,9 @@
        PROGRAM-ID. MONTY-HALL.
 
        DATA DIVISION.
-
        WORKING-STORAGE SECTION.
       * The number of times to run for each choice (keep and change will
-      * run numberOfRuns times EACH)
+      * run NUMBER-OF-RUNS times EACH)
        01 NUMBER-OF-RUNS PIC 9(7) VALUE 1000000.
 
        01 KEEP-WINS PIC 9(7) VALUE 0.
@@ -95,7 +94,6 @@
                " (" KEEP-PERCENT "% wins)"
            DISPLAY "Change Wins/Losses: " CHANGE-WINS "/" CHANGE-LOSSES
                " (" CHANGE-PERCENT "% wins)"
-
 
            STOP RUN.
        END PROGRAM MONTY-HALL.
